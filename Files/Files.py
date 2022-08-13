@@ -11,15 +11,5 @@ def creating_result():
             result.write(str(sorted(all_texts)[text])+'\n')
             result.write(''.join(line for line in open(key_list[pos], encoding='utf-8'))+'\n')
 
-        # pos = value_list.index(sorted(all_texts)[1])
-        # result.write(key_list[pos] + '\n')
-        # result.write(str(sorted(all_texts)[1]) + '\n')
-        # result.write(''.join(line for line in open(key_list[pos], encoding='utf-8'))+'\n')
-        #
-        # pos = value_list.index(sorted(all_texts)[2])
-        # result.write(key_list[pos] + '\n')
-        # result.write(str(sorted(all_texts)[2]) + '\n')
-        # result.write(''.join(line for line in open(key_list[pos], encoding='utf-8'))+'\n')
-
 
 creating_result()
