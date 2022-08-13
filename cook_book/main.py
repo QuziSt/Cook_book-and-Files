@@ -1,8 +1,3 @@
-# def start():
-#     dishes = input('Введите названия блюд через пробел: ').split()
-#     persons = input('Сколько человек?: ')
-#     return dishes, persons
-from pprint import pprint
 def cook_dict():
     with open('recipes.txt', encoding='utf-8') as recipes:
         cook_book = {}
@@ -30,7 +25,7 @@ def get_shop_list_by_dishes(dishes, person_count):
                 else:
                     all_ingredients.setdefault(i['ingredient_name'], {'measure': i['measure'], 'quantity': i['quantity']*person_count})
 
-    return all_ingredients
+    print(all_ingredients)
 
 
 def start():
